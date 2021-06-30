@@ -52,7 +52,11 @@ ul#list_box li div.remove_button {
   background-color: #FF4530;
 }
 ul#list_box li div.text_content {
+  width: 100%;
   margin: 3px 0 0 0.6rem;
+}
+ul#list_box li div.text_content p {
+  line-break: anywhere;
 }
 ul#list_box li.done {
   opacity: 0.3;
