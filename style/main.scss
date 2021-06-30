@@ -1,0 +1,80 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-style: none;
+}
+
+$--dark-blue: #0c0c17;
+$--blue: #303443;
+$--orange: #FF4530;
+
+body {
+	background-color: $--dark-blue;
+	font-family: Arial;
+	color: white;
+}
+
+main {
+	width: 100vw; height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	section {
+		padding: 5rem 2rem;
+		width: 600px;
+	}
+}
+
+ul#list_box {
+	list-style: none;
+
+	li {
+		background-color: $--blue;
+		padding: 1.5rem;
+		margin: .8rem 0;
+
+		border: none;
+		border-radius: 8px;
+
+		display: flex;
+		gap: 1rem;
+
+		div.remove_button, div.edit_button {
+			background: none;
+			min-width: 1.3rem; min-height: 1.3rem;
+			max-width: 1.3rem; max-height: 1.3rem;
+
+			border: 2px solid $--orange;
+			border-radius: 100%;
+
+			transition: 500ms;
+			&:hover {
+				background-color: $--orange;
+			}
+		}
+		div.remove_button {
+			background-color: $--orange;
+		}
+		div.text_content {
+			margin: 3px 0 0 .6rem;
+		}
+	}
+
+	li.done {
+		opacity: .3;
+
+		div.remove_button, div.edit_button {
+			background-color: $--dark-blue;
+			border-color: $--dark-blue;
+
+			&:hover {
+				background-color: white;
+				border-color: white;
+			}
+		}
+	}
+}
+

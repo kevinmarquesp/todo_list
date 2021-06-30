@@ -1,0 +1,69 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-style: none;
+}
+
+body {
+  background-color: #0c0c17;
+  font-family: Arial;
+  color: white;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section {
+  padding: 5rem 2rem;
+  width: 600px;
+}
+
+ul#list_box {
+  list-style: none;
+}
+ul#list_box li {
+  background-color: #303443;
+  padding: 1.5rem;
+  margin: 0.8rem 0;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+}
+ul#list_box li div.remove_button, ul#list_box li div.edit_button {
+  background: none;
+  min-width: 1.3rem;
+  min-height: 1.3rem;
+  max-width: 1.3rem;
+  max-height: 1.3rem;
+  border: 2px solid #FF4530;
+  border-radius: 100%;
+  transition: 500ms;
+}
+ul#list_box li div.remove_button:hover, ul#list_box li div.edit_button:hover {
+  background-color: #FF4530;
+}
+ul#list_box li div.remove_button {
+  background-color: #FF4530;
+}
+ul#list_box li div.text_content {
+  margin: 3px 0 0 0.6rem;
+}
+ul#list_box li.done {
+  opacity: 0.3;
+}
+ul#list_box li.done div.remove_button, ul#list_box li.done div.edit_button {
+  background-color: #0c0c17;
+  border-color: #0c0c17;
+}
+ul#list_box li.done div.remove_button:hover, ul#list_box li.done div.edit_button:hover {
+  background-color: white;
+  border-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
